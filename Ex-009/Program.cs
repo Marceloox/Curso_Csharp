@@ -23,6 +23,18 @@ namespace Ex_009
             if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
             {
                 Console.WriteLine("Os valore irformados formam um triângulo.");
+                if((ladoA == ladoB) && (ladoB == ladoC))
+                {
+                    Console.WriteLine("E ele é um Triângulo Equilátero.");
+                }
+                else if((ladoA == ladoB) || (ladoA == ladoC) || (ladoB == ladoC))
+                {
+                    Console.WriteLine("E ele é um triângulo Isósceles.");
+                }
+                else
+                {
+                    Console.WriteLine("E ele é um triângulo Escaleno.");
+                }
             }
             else
             {
